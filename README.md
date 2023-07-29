@@ -4,6 +4,8 @@
 
 🥣 Inspired by Letterboxd, Cerealboxd is a review app for cereal.
 
+💻 Created using Javascript, ReactJS, Express web framework, Node.JS, and MongoDB
+
 📗 Browse a continuously growing database of cereals
 
 ![alt text](https://i.imgur.com/NvydTx7.png)
