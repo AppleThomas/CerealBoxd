@@ -65,16 +65,16 @@ exports.setApp = function (app, client)
             userEmail = results[0].email;
             confirm = results[0].confirmed;
             id = results[0]._id
-            // console.log(id);
+            
 
             try
             {
-            const token = require("./createJWT.js");
-            ret = token.createToken( fn, ln, username, userEmail, confirm, id );
+                const token = require("./createJWT.js");
+                ret = token.createToken( fn, ln, username, userEmail, confirm, id );
             }
             catch(e)
             {
-            ret = {error:e.message};
+                ret = {error:e.message};
             
             }
         }
@@ -82,6 +82,7 @@ exports.setApp = function (app, client)
         {
             ret = {error:"Login/Password incorrect"};
         }
+
 
         res.status(200).json(ret);
 

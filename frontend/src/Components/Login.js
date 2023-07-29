@@ -26,6 +26,8 @@ function Login()
 
     const doLogin = async event =>
     {
+        window.alert("no")
+        console.log("no")
         event.preventDefault();
         var obj = {login:loginName.value,password:loginPassword.value};
         var js = JSON.stringify(obj);
@@ -47,6 +49,7 @@ function Login()
             var res = response.data;
             if (res.error) 
             {
+                
                 setMessage('Username and/or password combination is incorrect!');
             }
             else 
